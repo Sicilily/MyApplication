@@ -31,27 +31,27 @@ public class MainActivity extends AppCompatActivity {
         tabs.setViewPager(pager);
 
     }
-    /** 创建菜单 */
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    /** 设置菜单的点击事件 */
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        switch (item.getItemId()) {
-            case R.id.action_settings:
-                //Intent i = new Intent(this, SettingsActivity.class);
-                //startActivity(i);
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
+//    /** 创建菜单 */
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.menu_main, menu);
+//        return true;
+//    }
+//
+//    /** 设置菜单的点击事件 */
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//
+//        switch (item.getItemId()) {
+//            case R.id.action_settings:
+//                //Intent i = new Intent(this, SettingsActivity.class);
+//                //startActivity(i);
+//                return true;
+//            default:
+//                return super.onOptionsItemSelected(item);
+//        }
+//    }
 
     /** fragment的适配器 */
     public class MyAdapter extends FragmentPagerAdapter {
