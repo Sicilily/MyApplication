@@ -25,16 +25,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        pager = (ViewPager) findViewById(R.id.pager);
+        pager = findViewById(R.id.pager);
         pager.setAdapter(new MyAdapter(getSupportFragmentManager()));
-        tabs = (PagerSlidingTabStrip) findViewById(R.id.tabs);
+        tabs = findViewById(R.id.tabs);
         tabs.setViewPager(pager);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setPopupTheme(R.style.ThemeOverlay_AppCompat_Light);
-        if (toolbar != null) {
-            setSupportActionBar(toolbar);
-        }
     }
     /** 创建菜单 */
     @Override
